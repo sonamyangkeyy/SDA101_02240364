@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <h2>College Seminar Registration</h2>
+</head>
+<body>
+    
+    <form>
+        <!--Full Name-->
+        <label input="Full Name"> Full Name:</label>
+        <input type="text" id="full name" name="full name"><br><br>
+        <!--Date of Birth-->
+        <label input="DOB">Date Of Birth:</label>
+        <input type="date" id="DOB" name="Date Of Birth"><br><br>
+        <!--Gender-->
+        <p>Gender:</p>
+        <input type="radio" id="Male" name="Gender" value="Male">
+        <label input="Male">Male</label><br>
+        <input type="radio" id="Female" name="Gender" value="Female">
+        <label input="Female">Female</label><br>
+        <input type="radio" id="Other" name="Gender" value="Other">
+        <label input="Other">Other</label><br><br>
+        <!--Email Address-->
+        <label input="Email Address">Email Address:</label>
+        <input type="email" id="email address" name="Email address"required><br><br>
+        <!--Password-->
+        <label input="Password">Password:</label>
+        <input type="password" id="Password" name="Password"required><br><br>
+        <!--Phone Number-->
+        <label input="Phone number">Phone Number:</label>
+        <input type="number" id="Phone Number" name="Phone Number"required><br><br>
+        <!--Preferred Seminar Time-->
+        <label input="Prefrerred Seminar Time">Prefrerred Seminar Time:</label>
+        <select id="Prefrerred Seminar Time" name="Prefrerred Seminar Time">
+            <option input="Morning">Morning</option>
+            <option input="Evening">Evening</option>
+            <option input="Night">Night</option>
+        </select><br><br>
+        <!--Meal Preference-->
+        <label for="Meal Prefrerred">Meal Prefrerred:</label>
+        <select id="Meal Prefrerred" name="Male Prefrerred">
+            <option input="Vegetarian">Vegetarian</option>
+            <option input="Non-Vegetarian">Non-Vegetarian</option>
+            <option input="Vegan">Vegan</option>
+        </select><br><br>
+        <!--Submit button-->
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

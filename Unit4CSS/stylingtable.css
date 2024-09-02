@@ -1,0 +1,6 @@
+table, th, td {
+    border: 1px solid blue; border-collapse: collapse;
+}
+h1{
+    text-align: right;
+}

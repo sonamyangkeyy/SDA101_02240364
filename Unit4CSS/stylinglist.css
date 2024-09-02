@@ -1,0 +1,16 @@
+ol {
+    list-style-type: lower-latin;
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.event {
+    font-weight: bolder;
+}
+.a {
+    background-color: antiquewhite;
+    color: blue;
+}
+.a:hover {
+    background-color: black;
+}
+

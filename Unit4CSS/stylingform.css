@@ -1,0 +1,23 @@
+.credits {
+    font-family:'Georgia',serif;
+    font-weight: bold;
+  }
+
+.input {
+    align-items: center;
+    gap: 20px;
+    border: 2px solid rgb(4, 43, 128) ;
+    border-radius: 3px;
+
+}
+
+.submit {
+    color: black;
+    background-color: rgb(25, 236, 78);
+    border-radius: 5px;
+}
+
+.submit:hover{
+    color:rgb(0, 0, 0) ;
+    background-color: rgb(233, 182, 14);
+}
