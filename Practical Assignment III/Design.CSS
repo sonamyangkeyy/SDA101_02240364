@@ -7,40 +7,49 @@
 
 body {
     background-color: #f4f4f4;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
+    font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: white;
-    padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .logo h1 {
-    display: inline-block;
-    margin: 0;
+    font-size: 24px;
+    color: #333;
 }
 
-nav ul {
-    float: right;
+.nav-links {
     list-style: none;
+    display: flex;
 }
 
-nav ul li {
-    display: inline-block;
+.nav-links li {
     margin-left: 20px;
 }
 
-nav ul li a {
+.nav-links a {
     text-decoration: none;
-    color: black;
-    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
+.nav-links a:hover {
+    color: #007BFF;
+}
 .container1 {
     position: relative;
     text-align: left;
@@ -98,52 +107,55 @@ nav ul li a {
 
 .container3 {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 20px;
     margin: 0 auto;
     max-width: 1200px;
 }
 
-.left-section, .right-section {
+.left-column, .right-column {
     width: 48%;
+    flex: 1;
+    padding: 20px;
 }
-.left-section h3 {
+.left-column h3 {
     font-size: 28px;
     margin-bottom: 15px;
     font: bold;
 }
-.left-section p {
+.left-column p {
     line-height: 1.6;
     color: #666;
 }
-.left-section img {
+.left-column img {
     width: 100%;
     height: auto;
     margin-top: 20px;
 }
 
-.right-section img {
+.right-column img {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
-.right-section ul {
+.right-column ul {
     list-style: none;
     padding: 0;
 }
-.right-section ul li {
+.right-column ul li {
     margin-bottom: 10px;
     position: relative;
     padding-left: 25px;
 }
-.right-section ul li::before {
+.right-column ul li::before {
     content: '✔';
     color: #007BFF;
     position: absolute;
     left: 0;
     top: 0;
 }
-.right-section .button-container {
+.right-column .button-container {
     text-align: left;
 }
 .button-container a {
