@@ -276,6 +276,7 @@
                <img alt="Company logo 7" class="h-16" height="100" src="https://storage.googleapis.com/a1aa/image/nYKFxKno1969D1v67cs1KYy0qvkulc4Ee0B3caw1JioMvM0JA.jpg" width="100"/>
               </div>
              </section>
+             <br>
              <h1 class="text-3xl font-bold mb-4">Our Blog</h1>
            <div class="container">
             <div class="blog-posts">
@@ -306,33 +307,46 @@
             </div>
         </div>
         <div class="container">
-            <div class="faq-section">
-                <div class="faq-left">
-                    <h1>Faq</h1>
-                    <p>
-                        Sample text. Click to select the Text Element. Lorem ipsum odor amet, consectetur adipiscing elit. Luctus vestibulum lectus lacus ultricies posuere feugiat in dictum dapibus. Mollis tellus ad conubia massa molestie auctor. Gravida ipsum scelerisque nunc praesent; volutpat aenean. Magna tempus cras ultrices neque auctor pharetra lacinia. Venenatis magnis mauris litora ac ante. Leo platea malesuada placerat curae magnis fermentum elementum lectus.
-                    </p>
-                    <button>BOOK A CONSULTATION</button>
+            <div class="left-section">
+                <h1>Faq</h1>
+                <p>Sample text. Click to select the Text Element. Lorem ipsum dolor amet, consectetur adipiscing elit. Luctus vestibulum lectus lacus ultricies posuere feugiat in dictum dapibus. Mollis tellus ad conubia massa molestie auctor. Gravida ipsum scelerisque nunc praesent; volutpat aenean. Magna tempus cras ultricies neque auctor pharetra lacinia. Venenatis magnis mauris litora at ante. Leo platea malesuada placerat curae magnis fermentum elementum lectus.</p>
+                <button>BOOK A CONSULTATION</button>
+            </div>
+            <div class="right-section">
+                <div class="faq-item">
+                    <h2>What is the rough cost for the project? <i class="fas fa-plus"></i></h2>
+                    <p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.</p>
                 </div>
-                <div class="faq-right">
-                    <div class="faq-item">
-                        <h2>What is the rough cost for the project? <i class="fas fa-plus"></i></h2>
-                        <p>
-                            Answer: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.
-                        </p>
-                    </div>
-                    <div class="faq-item">
-                        <h2>How does Company guarantee high quality? <i class="fas fa-plus"></i></h2>
-                    </div>
-                    <div class="faq-item">
-                        <h2>Is Company licenced, accredited and insured? <i class="fas fa-plus"></i></h2>
-                    </div>
-                    <div class="faq-item">
-                        <h2>Consequat malesuada mus leo scelerisque <i class="fas fa-plus"></i></h2>
-                    </div>
+                <div class="faq-item">
+                    <h2>How does Company guarantee high quality? <i class="fas fa-plus"></i></h2>
+                    <p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.</p>
+                </div>
+                <div class="faq-item">
+                    <h2>Is Company licenced, accredited and insured? <i class="fas fa-plus"></i></h2>
+                    <p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.</p>
+                </div>
+                <div class="faq-item">
+                    <h2>Consequat malesuada mus leo scelerisque <i class="fas fa-plus"></i></h2>
+                    <p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.</p>
                 </div>
             </div>
         </div>
+        <script>
+            document.querySelectorAll('.faq-item h2').forEach(item => {
+                item.addEventListener('click', () => {
+                    const parent = item.parentElement;
+                    parent.classList.toggle('active');
+                    const icon = item.querySelector('i');
+                    if (parent.classList.contains('active')) {
+                        icon.classList.remove('fa-plus');
+                        icon.classList.add('fa-minus');
+                    } else {
+                        icon.classList.remove('fa-minus');
+                        icon.classList.add('fa-plus');
+                    }
+                });
+            });
+        </script>
         <h1>Our Amazing Team</h1>
         <div class="team-container">
             <div class="team-member">
