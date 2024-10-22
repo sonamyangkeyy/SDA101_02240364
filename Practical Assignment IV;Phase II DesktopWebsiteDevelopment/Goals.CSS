@@ -6,6 +6,55 @@
             margin: 0;
             padding: 0;
         }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .header .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .header .nav a {
+            color: #000;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        .header .nav .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .header .nav .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #a000a0;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .header .nav .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .header .nav .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .header .nav .dropdown:hover .dropdown-content {
+            display: block;
+        }
         .container {
             text-align: center;
             padding-top: 50px;
@@ -33,49 +82,8 @@
             font-size: 24px;
             margin-bottom: 10px;
         }
-        .navbar {
-            display: flex;
-            justify-content: flex-end;
-            padding: 20px;
-            font-size: 18px;
-        }
-        .navbar a {
-            color: #000;
-            text-decoration: none;
-            margin-left: 20px;
-        }
-        .navbar a:hover {
-            text-decoration: underline;
-        }
-        .logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            display: flex;
-            align-items: center;
-        }
-        .logo img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-        }
-        .logo span {
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .vertical-dots {
-            position: absolute;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .vertical-dots .dot {
-            width: 10px;
-            height: 10px;
-            background-color: #000;
-            border-radius: 50%;
-            margin: 5px 0;
-        }
+        
+       
+       
+       
+       
