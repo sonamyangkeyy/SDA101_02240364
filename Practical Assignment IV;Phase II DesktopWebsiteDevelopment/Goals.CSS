@@ -1,0 +1,81 @@
+
+   body {
+            background-color: #ff00a2;
+            font-family: Arial, sans-serif;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            text-align: center;
+            padding-top: 50px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-image: url('https://placehold.co/150x150');
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
+        }
+        .goals-title {
+            font-size: 48px;
+            color: #6e6e6e;
+            margin-top: 20px;
+        }
+        .goals-list {
+            text-align: left;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .goals-list li {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            font-size: 18px;
+        }
+        .navbar a {
+            color: #000;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .logo span {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .vertical-dots {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .vertical-dots .dot {
+            width: 10px;
+            height: 10px;
+            background-color: #000;
+            border-radius: 50%;
+            margin: 5px 0;
+        }

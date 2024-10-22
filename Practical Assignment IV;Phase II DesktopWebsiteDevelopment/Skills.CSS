@@ -1,0 +1,69 @@
+body {
+    background-color: #ff69b4;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.nav a:last-child {
+    margin-left: 20px;
+}
+.nav a:hover {
+    text-decoration: underline;
+}
+.skills-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #4b0082;
+    margin-top: 50px;
+}
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.skill {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+.skill .percentage {
+    font-weight: bold;
+    color: black;
+}
+.skill img {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+}
