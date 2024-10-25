@@ -5,8 +5,8 @@ body {
     padding: 0;
 }
 .container {
-    text-align: center;
     padding: 50px;
+    display: flex;
 }
 .header {
     display: flex;
@@ -58,22 +58,30 @@ body {
 }
 .content {
     margin-top: 50px;
+    width:80%;
 }
 .content h1 {
     font-size: 48px;
     color: #4b0082;
+    text-align: center;
+    margin-top: 10%;
 }
 .content p {
     font-size: 24px;
     color: black;
     max-width: 600px;
     margin: 20px auto;
+   
 }
 .profile-pic {
-    margin-top: 50px;
+    margin-left: 9%;
+    margin-top: 10%;
+    align-items: left;
+    margin-bottom: 3%;
 }
 .profile-pic img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
+    align-items: left;
 }

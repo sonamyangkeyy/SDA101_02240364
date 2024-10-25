@@ -65,23 +65,32 @@ body {
     color: #4b0082;
     margin-top: 50px;
 }
-.skills-container {
+.container {
+    text-align: center;
     display: flex;
+    padding: 100px;
     justify-content: space-around;
-    align-items: center;
     margin-top: 50px;
+
 }
-.skill {
+.text {
+    font-size: 2em;
+    font-weight: bold;
     text-align: center;
     font-size: 30px;
     color: black;
+
 }
-.skill .percentage {
-    font-weight: bold;
+.text span {
     color: black;
+    font-weight: bold;
+    margin-left: 10%;
 }
-.skill img {
-    margin-top: 20px;
+.chart {
     width: 100px;
     height: 100px;
+    background: conic-gradient(#ff1493 0% 70%, #ffb6c1 70% 100%);
+    border-radius: 50%;
+    margin-top: 10%;
 }
+

@@ -55,28 +55,25 @@
         .header .nav .dropdown:hover .dropdown-content {
             display: block;
         }
-        .container {
-            text-align: center;
-            padding-top: 50px;
-        }
         .profile-pic {
-            width: 150px;
-            height: 150px;
+            width:200px;
+            height: 200px;
             border-radius: 50%;
-            background-image: url('https://placehold.co/150x150');
             background-size: cover;
             background-position: center;
             margin: 0 auto;
+            margin-left: 10%;
+            margin-top: 10%;
         }
         .goals-title {
             font-size: 48px;
             color: #6e6e6e;
-            margin-top: 20px;
+            margin-left: 60%;
         }
         .goals-list {
             text-align: left;
             display: inline-block;
-            margin-top: 20px;
+            margin-left: 50%;
         }
         .goals-list li {
             font-size: 24px;
