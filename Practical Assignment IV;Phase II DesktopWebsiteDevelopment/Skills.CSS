@@ -93,4 +93,25 @@ body {
     border-radius: 50%;
     margin-top: 10%;
 }
+.cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 0, 149);
+    border-radius: 50%;
+    pointer-events: none; 
+    transform: translate(-50%, -50%);
+    animation: color 3s infinite;
+}
 
+@keyframes color {
+    0%, 100% {
+        background: blue;
+    }
+    50% {
+        background: #4b0082;
+    }
+    100%{
+        background: #ff1493;
+    }
+}

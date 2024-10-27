@@ -107,4 +107,38 @@
             font-size: 24px;
             margin: 0 10px;
         }
+        .Hover {
+            width: 300px;
+            height: 200px;
+            background-color: #007bff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            position: relative;
+        }
         
+        .cursor {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(255, 0, 149);
+            border-radius: 50%;
+            pointer-events: none; 
+            transform: translate(-50%, -50%);
+            animation: color 3s infinite;
+        }
+        
+        @keyframes color {
+            0%, 100% {
+                background: blue;
+            }
+            50% {
+                background: #4b0082;
+            }
+            100%{
+                background: #ff1493;
+            }
+        }
