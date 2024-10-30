@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <toggle-button style="display: inline-block; margin: 10px;"></toggle-button>
+    <script>
+        class ToggleButton extends HTMLElement {
+            constructor() {
+                super();
+                this.attachShadow({ mode: 'open' });
+                const button = document.createElement('button');
+                button.textContent = 'OFF';
+                button.style.backgroundColor = 'red';
+                button.style.color = 'white';
+                button.style.padding = '10px 20px';
+                button.style.border = 'none';
+                button.style.cursor = 'pointer';
+                const savedState = localStorage.getItem('toggleState');
+                const isOn = savedState === 'on';
+                this.updateButton(button, isOn);
+                button.addEventListener('click', () => {
+                    const newState = button.textContent === 'OFF';
+                    this.updateButton(button, newState);
+                    this.dispatchEvent(new CustomEvent('toggle-changed', {
+                        detail: { isOn: newState },
+                        bubbles: true
+                    }));
+                    localStorage.setItem('toggleState', newState ? 'on' : 'off');
+                });
+                this.shadowRoot.appendChild(button);
+            }
+            updateButton(button, isOn) {
+                button.textContent = isOn ? 'ON' : 'OFF';
+                button.style.backgroundColor = isOn ? 'green' : 'red';
+            }
+        }
+        customElements.define('toggle-button', ToggleButton);
+    </script>
+</body>
+</html>

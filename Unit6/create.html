@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+    /* Basic styling for the user-profile card */
+    user-profile {
+      display: block;
+      border: 1px solid #ccc;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<user-profile name="John Doe" role="Software Developer"></user-profile>
+
+<script>
+  class UserProfile extends HTMLElement {
+    constructor() {
+      super();
+
+      // Attach a shadow DOM to the element
+      this.attachShadow({ mode: 'open' });
+
+      // Template for the element's inner HTML
+      const template = document.createElement('template');
+      template.innerHTML = `
+        <div>
+          <h2 id="name"></h2>
+          <p id="role"></p>
+        </div>
+      `;
+
+      // Attach the template content to the shadow DOM
+      this.shadowRoot.appendChild(template.content.cloneNode(true));
+    }
+
+    connectedCallback() {
+      // Set the attributes' values
+      this.shadowRoot.getElementById('name').textContent = this.getAttribute('name');
+      this.shadowRoot.getElementById('role').textContent = this.getAttribute('role');
+    }
+  }
+
+  // Define the new element
+  customElements.define('user-profile', UserProfile);
+</script>
+</body>
+</html>
