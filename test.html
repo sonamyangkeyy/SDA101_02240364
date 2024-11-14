@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog API Example</title>
+       <style>
+        .dog-image {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            margin: 10px;
+        }
+       </style>
+</head>
+<body>
+    <h1>Random Dog Images</h1>
+    <div id="dog-images-container"></div>
+    <script>
+        fetch('https://dog.ceo/api/breeds/labrador/image/5')
+        .then(response => response.json())
+        .then(data=> {
+            const imageUrls = data.message;
+            const container = document.getElementByid ('dog-image-container');
+            imageUrls.forEach(url =>{
+                const img = document.createElement('img');
+                img.scr = url;
+                img.alt = 'Random Dog Image';
+                img.classList.add('dog-image');
+                container.appendchild(img);
+            });
+        })
+        .catch(error =>{
+            console.error('Error:', error);
+        });
+    </script>
+</body>
+</html>
